@@ -1,0 +1,21 @@
+[package]
+name = "tarantool-schema"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+codegen = []
+
+[dependencies]
+anyhow = "1"
+log = "0.4"
+
+linked-hash-map = { version = "0.5", features = ["serde_impl"] }
+convert_case = "0.4"
+
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.8"
+
+tarantool = { git = "https://github.com/chertov/tarantool-module.git", branch = "dev", features = [ "schema" ] }
+
