@@ -1,0 +1,14 @@
+# ignore all
+*
+!*/
+
+# except
+!/src/**/*.rs
+!/Cargo.toml
+!/*.md
+!/
+
+# don't ignore all sub .gitignore
+!/**/.gitignore
+
+.idea
